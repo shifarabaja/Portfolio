@@ -72,3 +72,9 @@ footer {
 .resume-link:hover {
     text-decoration: underline;
 }
+
+#image {
+    position: relative;
+    height:;
+    width:;
+}
