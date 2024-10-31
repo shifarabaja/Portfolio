@@ -1,80 +1,63 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    max-width: 1000px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
 }
 
 header {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
     text-align: center;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 15px;
 }
 
 header h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-header p {
-    margin: 5px 0;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
 }
 
 section {
     margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
 }
 
-section h2 {
-    margin-top: 0;
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.experience ul,
-.skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.experience li,
-.skills li {
-    margin: 5px 0;
-}
-
-.portfolio {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding-top: 15px;
-    border-top: 2px solid #ccc;
-}
-
-.resume-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.resume-link:hover {
-    text-decoration: underline;
-}
-
-#image {
-    position: relative;
-    height:;
-    width:;
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
