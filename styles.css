@@ -1,27 +1,27 @@
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f5f5f5;
     color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    width: 100%;
-    padding: 20px;
     background-color: #333;
     color: white;
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
     margin-bottom: 10px;
+    font-size: 2.5rem;
 }
 
 nav ul {
@@ -44,178 +44,28 @@ nav ul li a:hover {
 main {
     width: 80%;
     max-width: 800px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 section {
     margin: 20px 0;
 }
 
+/* Contact Page */
 h2 {
+    font-size: 2rem;
     color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333;
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-}
-
-header {
-    width: 100%;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    color: #ddd;
-}
-
-main {
-    width: 80%;
-    max-width: 800px;
-    margin: 40px 0;
-}
-
-h2 {
-    color: #333;
-    font-size: 28px;
     text-align: center;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.resume-section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.resume-section h3 {
-    font-size: 22px;
-    color: #1a73e8;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #1a73e8;
-    padding-bottom: 5px;
-}
-
-.resume-section p, .resume-section li {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.resume-section ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-.resume-section ul li {
-    margin-bottom: 8px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7fa;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Section (for Past Projects and Contact Me) */
-section {
-    margin: 20px;
-}
-
-/* Past Projects Styles */
-.project {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.project h2 {
-    margin-top: 0;
-    font-size: 1.8rem;
-    color: #333;
-}
-
-.project p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #1a73e8;
-    font-weight: bold;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Me Styles */
-h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
 p {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Form Styles */
@@ -288,14 +138,6 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
-    }
-
-    .project h2 {
-        font-size: 1.5rem;
-    }
-
-    .project p {
-        font-size: 0.95rem;
     }
 
     form {
