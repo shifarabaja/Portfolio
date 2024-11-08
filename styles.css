@@ -1,4 +1,4 @@
-/* Reset Styles */
+/* Resetting defaults and adding base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,97 +6,179 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Body styles */
 body {
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin-bottom: 10px;
     font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ddd;
+    color: #1a73e8;
 }
 
+/* Main Section Styles */
 main {
-    width: 80%;
-    max-width: 800px;
-    margin-top: 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
-section {
-    margin: 20px 0;
-}
-
-/* Contact Page */
+/* Section Headers */
 h2 {
-    font-size: 2rem;
     color: #333;
+    font-size: 2rem;
     text-align: center;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 8px;
     margin-bottom: 20px;
 }
 
+/* General section styling */
+section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
 p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Resume Section Styling */
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h3 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.resume-section ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.resume-section ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Project Section Styling */
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
-    text-align: center;
 }
 
-/* Form Styles */
+.project a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #155ab6;
+}
+
+/* Contact Form Styles */
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
-    font-weight: bold;
+    font-size: 1.1rem;
     color: #333;
-    display: block;
     margin-bottom: 5px;
+    display: block;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1rem;
+    color: #333;
 }
 
 textarea {
@@ -110,7 +192,7 @@ button {
     font-size: 1.1rem;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -125,28 +207,48 @@ button:focus {
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
-    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
-/* Media Queries */
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
 
-    form {
-        padding: 15px;
-        margin: 10px;
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .resume-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .project h2 {
+        font-size: 1.5rem;
+    }
+
+    .project p {
+        font-size: 0.95rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
     }
 
     button {
         width: 100%;
-        padding: 12px;
+        padding: 14px;
     }
 }
