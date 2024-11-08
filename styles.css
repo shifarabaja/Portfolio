@@ -252,3 +252,9 @@ footer {
         padding: 14px;
     }
 }
+/* Make the iframe responsive */
+.project iframe {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
